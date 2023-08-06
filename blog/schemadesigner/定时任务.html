@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>xxl-job定时任务 | BXuan随笔</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="欢迎来到 BXuan 的✨个人网站✨👏👏👏！">
+    
+    <link rel="preload" href="/assets/css/0.styles.72717b73.css" as="style"><link rel="preload" href="/assets/js/app.c7952645.js" as="script"><link rel="preload" href="/assets/js/2.53ba99d7.js" as="script"><link rel="preload" href="/assets/js/73.cca17919.js" as="script"><link rel="prefetch" href="/assets/js/10.4ab63f7a.js"><link rel="prefetch" href="/assets/js/11.982bd386.js"><link rel="prefetch" href="/assets/js/12.0b6105e0.js"><link rel="prefetch" href="/assets/js/13.0b88c945.js"><link rel="prefetch" href="/assets/js/14.32b6e670.js"><link rel="prefetch" href="/assets/js/15.1651a6b7.js"><link rel="prefetch" href="/assets/js/16.55e08c05.js"><link rel="prefetch" href="/assets/js/17.6d98ee08.js"><link rel="prefetch" href="/assets/js/18.fc4ae118.js"><link rel="prefetch" href="/assets/js/19.ea630d0e.js"><link rel="prefetch" href="/assets/js/20.6151654c.js"><link rel="prefetch" href="/assets/js/21.1ddadd96.js"><link rel="prefetch" href="/assets/js/22.6e312c0e.js"><link rel="prefetch" href="/assets/js/23.ab691b41.js"><link rel="prefetch" href="/assets/js/24.6667f20a.js"><link rel="prefetch" href="/assets/js/25.517e4303.js"><link rel="prefetch" href="/assets/js/26.c92294b8.js"><link rel="prefetch" href="/assets/js/27.30245c81.js"><link rel="prefetch" href="/assets/js/28.83f84f64.js"><link rel="prefetch" href="/assets/js/29.2ebf177e.js"><link rel="prefetch" href="/assets/js/3.c16bd42d.js"><link rel="prefetch" href="/assets/js/30.15f1115b.js"><link rel="prefetch" href="/assets/js/31.271bb831.js"><link rel="prefetch" href="/assets/js/32.a3ffc84b.js"><link rel="prefetch" href="/assets/js/33.837c492d.js"><link rel="prefetch" href="/assets/js/34.6535b864.js"><link rel="prefetch" href="/assets/js/35.a9f35d11.js"><link rel="prefetch" href="/assets/js/36.58c71fa7.js"><link rel="prefetch" href="/assets/js/37.536c34aa.js"><link rel="prefetch" href="/assets/js/38.dca08340.js"><link rel="prefetch" href="/assets/js/39.20e843ec.js"><link rel="prefetch" href="/assets/js/4.d6c515d3.js"><link rel="prefetch" href="/assets/js/40.f33282da.js"><link rel="prefetch" href="/assets/js/41.0afdb83a.js"><link rel="prefetch" href="/assets/js/42.68f5e469.js"><link rel="prefetch" href="/assets/js/43.65a3e240.js"><link rel="prefetch" href="/assets/js/44.0429a345.js"><link rel="prefetch" href="/assets/js/45.61c6d807.js"><link rel="prefetch" href="/assets/js/46.69ea8e4b.js"><link rel="prefetch" href="/assets/js/47.21cbd519.js"><link rel="prefetch" href="/assets/js/48.b46e7243.js"><link rel="prefetch" href="/assets/js/49.8f93a744.js"><link rel="prefetch" href="/assets/js/5.65846da7.js"><link rel="prefetch" href="/assets/js/50.323a9f2b.js"><link rel="prefetch" href="/assets/js/51.731382e7.js"><link rel="prefetch" href="/assets/js/52.429c91e1.js"><link rel="prefetch" href="/assets/js/53.6ad30434.js"><link rel="prefetch" href="/assets/js/54.c2c209db.js"><link rel="prefetch" href="/assets/js/55.36509a79.js"><link rel="prefetch" href="/assets/js/56.442c1774.js"><link rel="prefetch" href="/assets/js/57.104714c1.js"><link rel="prefetch" href="/assets/js/58.d1eb3d61.js"><link rel="prefetch" href="/assets/js/59.7642ee42.js"><link rel="prefetch" href="/assets/js/6.1cca85df.js"><link rel="prefetch" href="/assets/js/60.497110a7.js"><link rel="prefetch" href="/assets/js/61.9456cece.js"><link rel="prefetch" href="/assets/js/62.4acf84cc.js"><link rel="prefetch" href="/assets/js/63.649869e0.js"><link rel="prefetch" href="/assets/js/64.a9a2a5e7.js"><link rel="prefetch" href="/assets/js/65.caf50992.js"><link rel="prefetch" href="/assets/js/66.a082df91.js"><link rel="prefetch" href="/assets/js/67.77906dd6.js"><link rel="prefetch" href="/assets/js/68.b187b7a3.js"><link rel="prefetch" href="/assets/js/69.d4e466ec.js"><link rel="prefetch" href="/assets/js/7.e19e61cb.js"><link rel="prefetch" href="/assets/js/70.d3e767af.js"><link rel="prefetch" href="/assets/js/71.b195f372.js"><link rel="prefetch" href="/assets/js/72.394bd04d.js"><link rel="prefetch" href="/assets/js/74.91e1d2ef.js"><link rel="prefetch" href="/assets/js/75.6f26e213.js"><link rel="prefetch" href="/assets/js/76.9ae90df7.js"><link rel="prefetch" href="/assets/js/77.1220dc5d.js"><link rel="prefetch" href="/assets/js/78.d80a520f.js"><link rel="prefetch" href="/assets/js/79.d22d4bb9.js"><link rel="prefetch" href="/assets/js/8.c222cd7c.js"><link rel="prefetch" href="/assets/js/9.55b8fde2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.72717b73.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.jpg" alt="BXuan随笔" class="logo"> <span class="site-name can-hide">BXuan随笔</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/network/" class="nav-link">
+  🍔计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/blog/os/" class="nav-link">
+  🍟操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/blog/algo/" class="nav-link">
+  🍕数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/" class="nav-link">
+  🌭Java
+</a></li><li class="dropdown-item"><!----> <a href="/blog/go/" class="nav-link">
+  🍿Go
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件开发" class="dropdown-title"><span class="title">软件开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件开发" class="mobile-dropdown-title"><span class="title">软件开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          🌮数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/mysql/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/blog/redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🥪开发框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/frame/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-subitem"><a href="/blog/frame/springboot/" class="nav-link">
+  SpringBoot
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🥟架构设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/schemadesigner/" class="nav-link router-link-active">
+  设计模式
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件测试" class="dropdown-title"><span class="title">软件测试</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件测试" class="mobile-dropdown-title"><span class="title">软件测试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/softwaretest/baseOfSoftwareTest/" class="nav-link">
+  🥓软件测试基础
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章阅读" class="dropdown-title"><span class="title">文章阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="文章阅读" class="mobile-dropdown-title"><span class="title">文章阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/interview/all.html" class="nav-link">
+  💪面经汇总
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/" class="nav-link">
+  🧀其他阅读
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/BXuan-Yang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github🙋‍♂️
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/network/" class="nav-link">
+  🍔计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/blog/os/" class="nav-link">
+  🍟操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/blog/algo/" class="nav-link">
+  🍕数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/" class="nav-link">
+  🌭Java
+</a></li><li class="dropdown-item"><!----> <a href="/blog/go/" class="nav-link">
+  🍿Go
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件开发" class="dropdown-title"><span class="title">软件开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件开发" class="mobile-dropdown-title"><span class="title">软件开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          🌮数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/mysql/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/blog/redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🥪开发框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/frame/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-subitem"><a href="/blog/frame/springboot/" class="nav-link">
+  SpringBoot
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🥟架构设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/schemadesigner/" class="nav-link router-link-active">
+  设计模式
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件测试" class="dropdown-title"><span class="title">软件测试</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件测试" class="mobile-dropdown-title"><span class="title">软件测试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/softwaretest/baseOfSoftwareTest/" class="nav-link">
+  🥓软件测试基础
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章阅读" class="dropdown-title"><span class="title">文章阅读</span> <span class="arrow down"></span></button> <button type="button" aria-label="文章阅读" class="mobile-dropdown-title"><span class="title">文章阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/interview/all.html" class="nav-link">
+  💪面经汇总
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/" class="nav-link">
+  🧀其他阅读
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/BXuan-Yang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github🙋‍♂️
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/schemadesigner/DesignMode.html" class="sidebar-link">盘点常见的二十三种设计模式</a></li><li><a href="/blog/schemadesigner/如何设计一个高并发系统.html" class="sidebar-link">如何设计一个优秀的高并发系统</a></li><li><a href="/blog/schemadesigner/实现异步执行的八种方式.html" class="sidebar-link">实现异步的 8 种方式</a></li><li><a href="/blog/schemadesigner/定时任务.html" class="active sidebar-link">xxl-job定时任务</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/schemadesigner/定时任务.html#xxl-job定时任务" class="sidebar-link">xxl-job定时任务</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/schemadesigner/定时任务.html#一、xxl-job-是什么" class="sidebar-link">一、xxl-job 是什么？</a></li><li class="sidebar-sub-header"><a href="/blog/schemadesigner/定时任务.html#二、xxl-job-能解决什么问题" class="sidebar-link">二、xxl-job 能解决什么问题？</a></li><li class="sidebar-sub-header"><a href="/blog/schemadesigner/定时任务.html#三、官方文档" class="sidebar-link">三、官方文档</a></li></ul></li></ul></li><li><a href="/blog/schemadesigner/订单超时取消的三种方案.html" class="sidebar-link">订单超时自动取消的三种方案</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="xxl-job定时任务"><a href="#xxl-job定时任务" class="header-anchor">#</a> xxl-job定时任务</h2> <h3 id="一、xxl-job-是什么"><a href="#一、xxl-job-是什么" class="header-anchor">#</a> 一、xxl-job 是什么？</h3> <p>XXL-JOB 是一个<strong>分布式任务调度平台</strong>，其核心设计目标是开发迅速、学习简单、轻量级、易扩展。现已开放源代码并接入多家公司线上产品线，开箱即用。</p> <p>它是大众点评公司的许雪里开发出来的框架。</p> <p><strong>什么是任务调度？</strong></p> <ul><li>某一时间段进行任务的操作。</li></ul> <p>具体任务调度有哪些应用的场景？</p> <ul><li>时间驱动:房贷短信,营销类短信,对账单.日结等</li> <li>数据驱动:数据同步、异步数据交换等。</li></ul> <p><strong>现有的定时任务的缺点</strong></p> <div class="language- extra-class"><pre class="language-text"><code>spring task:
+	加入一个注解enableschdula
+	写一个方法 添加一个注解 指定cron表达式
+	不支持集群 不能及时停止
+quratz:
+	配置相对多
+	支持集群，实现很麻烦，配置多
+timer:
+	原生，使用起来麻烦
+ 
+分布式定时任务解决以上的问题：xxl-job，elastic-job,oracle job.
+</code></pre></div><h3 id="二、xxl-job-能解决什么问题"><a href="#二、xxl-job-能解决什么问题" class="header-anchor">#</a> 二、xxl-job 能解决什么问题？</h3> <p><strong>xxl-job的特性</strong></p> <p>1、简单：支持通过Web页面对任务进行CRUD操作，操作简单，一分钟上手；</p> <p>2、动态：支持动态修改任务状态、启动/停止任务，以及终止运行中任务，即时生效；</p> <p>3、路由策略：执行器集群部署时提供丰富的路由策略，包括：第一个、最后一个、轮询、随机、一致性HASH、最不经常使用、最近最久未使用、故障转移、忙碌转移等；</p> <p>4、故障转移：任务路由策略选择”故障转移”情况下，如果执行器集群中某一台机器故障，将会自动Failover切换到一台正常的执行器发送调度请求。</p> <p>5、任务超时控制：支持自定义任务超时时间，任务运行超时将会主动中断任务</p> <p>6、一致性：“调度中心”通过DB锁保证集群分布式调度的一致性, 一次任务调度只会触发一次执行</p> <p>7、邮件报警：任务失败时支持邮件报警，支持配置多邮件地址群发报警邮件；</p> <p>8、任务进度监控：支持实时监控任务进度；</p> <p><strong>xxl-job的几个角色</strong></p> <p>原生定时任务的概念：</p> <ul><li><p>调度器 ：负责对用户定义的所有任务进行调度。</p></li> <li><p>触发器 : 触发器在逻辑上包含两个属性，即如何触发该调度器和触发该调度器之后进行怎么样的操作</p></li> <li><p>任务 : 触发器在被触发后进行的操作，可以指定任意一个类的某个方法。</p></li></ul> <h3 id="三、官方文档"><a href="#三、官方文档" class="header-anchor">#</a> 三、官方文档</h3> <p><a href="https://www.xuxueli.com/xxl-job/#%E3%80%8A%E5%88%86%E5%B8%83%E5%BC%8F%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%B9%B3%E5%8F%B0XXL-JOB%E3%80%8B" target="_blank" rel="noopener noreferrer">《分布式任务调度平台XXL-JOB》<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/schemadesigner/实现异步执行的八种方式.html" class="prev">
+        实现异步的 8 种方式
+      </a></span> <span class="next"><a href="/blog/schemadesigner/订单超时取消的三种方案.html">
+        订单超时自动取消的三种方案
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.c7952645.js" defer></script><script src="/assets/js/2.53ba99d7.js" defer></script><script src="/assets/js/73.cca17919.js" defer></script>
+  </body>
+</html>
